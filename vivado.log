@@ -1,0 +1,269 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Oct 23 14:31:28 2017
+# Process ID: 7420
+# Current directory: C:/Users/l/Desktop/6463ADVHDes/code/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12244 C:\Users\l\Desktop\6463ADVHDes\code\project_4\project_4.xpr
+# Log file: C:/Users/l/Desktop/6463ADVHDes/code/project_4/vivado.log
+# Journal file: C:/Users/l/Desktop/6463ADVHDes/code/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 786.840 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'inverse_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj inverse_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inverse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sim_1/new/inverse_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inverse_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3e31f9a418834f22b6d8932ebccbb322 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot inverse_tb_behav xil_defaultlib.inverse_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal din [C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd:48]
+WARNING: [VRFC 10-1625] value in initialization depends on signal din [C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.inverse [inverse_default]
+Compiling architecture behavioral of entity xil_defaultlib.inverse_tb
+Built simulation snapshot inverse_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav/xsim.dir/inverse_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 786.840 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 786.840 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'inverse_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj inverse_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inverse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sim_1/new/inverse_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inverse_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3e31f9a418834f22b6d8932ebccbb322 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot inverse_tb_behav xil_defaultlib.inverse_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal din [C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd:48]
+WARNING: [VRFC 10-1625] value in initialization depends on signal din [C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.inverse [inverse_default]
+Compiling architecture behavioral of entity xil_defaultlib.inverse_tb
+Built simulation snapshot inverse_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav/xsim.dir/inverse_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav/xsim.dir/inverse_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Oct 23 14:35:17 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 23 14:35:17 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 786.840 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "inverse_tb_behav -key {Behavioral:sim_1:Functional:inverse_tb} -tclbatch {inverse_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source inverse_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: ARG is too large in CONV_INTEGER
+Time: 50 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 150 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 250 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 350 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 450 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 550 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 650 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 750 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 850 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 950 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'inverse_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 788.594 ; gain = 1.754
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 791.555 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'inverse_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj inverse_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inverse
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sim_1/new/inverse_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity inverse_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3e31f9a418834f22b6d8932ebccbb322 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot inverse_tb_behav xil_defaultlib.inverse_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal din [C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd:48]
+WARNING: [VRFC 10-1625] value in initialization depends on signal din [C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.inverse [inverse_default]
+Compiling architecture behavioral of entity xil_defaultlib.inverse_tb
+Built simulation snapshot inverse_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav/xsim.dir/inverse_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav/xsim.dir/inverse_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Oct 23 14:39:35 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 23 14:39:35 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 791.555 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "inverse_tb_behav -key {Behavioral:sim_1:Functional:inverse_tb} -tclbatch {inverse_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source inverse_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: ARG is too large in CONV_INTEGER
+Time: 50 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 150 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 250 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 350 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 450 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 550 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 650 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 750 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 850 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 950 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'inverse_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 791.555 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 ns
+Error: ARG is too large in CONV_INTEGER
+Time: 50 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 150 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 250 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 350 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 450 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 550 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 650 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 750 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 850 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+Error: ARG is too large in CONV_INTEGER
+Time: 950 ns  Iteration: 2  Process: /inverse_tb/DUT/CONT_CALCULATION  File: C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd
+close_sim

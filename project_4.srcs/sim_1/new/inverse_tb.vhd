@@ -57,16 +57,16 @@ DUT: inverse port map(clk, clr, din, dout, ct);
 clock:process
 begin
 clk <= '0';
-wait for 5ns;
+wait for 50ns;
 clk <= '1';
-wait for 5ns;
+wait for 50ns;
 end process;
 
 test: process
 begin
 din <= (others => '0');
 clr <= '1';
-wait for 4ns;
+wait for 40ns;
 clr <= '0';
 wait;
 end process;

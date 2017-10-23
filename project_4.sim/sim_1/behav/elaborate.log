@@ -3,8 +3,6 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 3e31f9a418834f22b6d8932ebccbb322 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot inverse_tb_behav xil_defaultlib.inverse_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-1625] value in initialization depends on signal din [C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd:48]
-WARNING: [VRFC 10-1625] value in initialization depends on signal din [C:/Users/l/Desktop/6463ADVHDes/code/project_4/project_4.srcs/sources_1/new/inverse.vhd:49]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
