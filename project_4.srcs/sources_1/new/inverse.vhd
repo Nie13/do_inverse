@@ -55,28 +55,48 @@ architecture Behavioral of inverse is
    signal ba_xor: std_logic_vector (31 downto 0);
    signal ab_rot: std_logic_vector (31 downto 0);
    signal ba_rot: std_logic_vector (31 downto 0);
+   signal step_count: std_logic_vector (2 downto 0) := "000";
 
 begin
 
 dout(63 downto 32) <= a(31 downto 0);
 dout(31 downto 0) <= b(31 downto 0); 
 ct <= i_cnt;
-COUNTER: PROCESS(clr, clk, din)  
+STEP_COUNTER: PROCESS(clr, clk, din)  
   BEGIN
     IF(clr= '1') THEN  
-      i_cnt<="1101"; 
-      fin <= '0';
-      a <= (others => '0');
-      b <= (others => '0');
+--      i_cnt<="1101"; 
+      step_count <= "000";
+--      fin <= '0';
+--      a <= (others => '0');
+--      b <= (others => '0');
     ELSIF (clk'EVENT AND clk='1') THEN
-      if (i_cnt = "1111" or i_cnt = "0000") then
-        i_cnt <= "1111";
-        fin <= '1';
-      else
-        i_cnt<= i_cnt- "0001";        
-      end if;
+        step_count <= step_count + "001";
+--      if (i_cnt = "1111" or i_cnt = "0000") then
+--        i_cnt <= "1111";
+--        fin <= '1';
+--      else
+--        i_cnt<= i_cnt- "0001";        
+--      end if;
     END IF;
 END PROCESS;
+
+LOOP_COUNTER: PROCESS (step_count, clr)
+BEGIN
+if(clr = '1') then
+i_cnt <= "1101";
+fin <= '0';
+a <= (others => '0');
+b <= (others => '0');
+elsif(step_count(0)'EVENT and step_count = "000") then
+if (i_cnt = "1111" or i_cnt = "0000") then
+i_cnt <= "1111";
+fin <= '1';
+else
+i_cnt <= i_cnt - "0001";
+end if;
+end if;
+end process;
 
 CONT_CALCULATION:PROCESS(i_cnt)
 variable plus1, plus2, result : integer;
